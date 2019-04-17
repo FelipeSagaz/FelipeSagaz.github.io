@@ -19,7 +19,7 @@ botaoAdicionar.addEventListener("click", function(event){
   ulErro.innerHTML = "";
 });
 
-function otbemDadosDoFormulario(form){
+const otbemDadosDoFormulario = (form) => {
 
 	let agendamento = {
 		nome: form.nome.value,
@@ -32,7 +32,7 @@ function otbemDadosDoFormulario(form){
 	return agendamento;
 }
 
-function exibeMensagensDeErro(erros){
+const exibeMensagensDeErro = (erros) => {
 		var ul = document.querySelector("#mensagem-erro");
 		ul.innerHTML = "";
 		erros.forEach(function(erro){
@@ -42,13 +42,13 @@ function exibeMensagensDeErro(erros){
 		});
 }
 
-function adicionaAgendamentoNaTabela(agendamento){
+const adicionaAgendamentoNaTabela = (agendamento) => {
 	let agendamentoTr = montaTr(agendamento);
 	let tabela = document.querySelector("#tabela-agendamentos");
 	tabela.appendChild(agendamentoTr);
 }
 
-function montaTr(agendamento) {
+const montaTr = (agendamento) => {
     let agendamentoTr = document.createElement("tr");
     agendamentoTr.classList.add("paciente");
 
@@ -61,14 +61,14 @@ function montaTr(agendamento) {
     return agendamentoTr;
 }
 
-function montaTd(dado,classe){
+const montaTd = (dado,classe) => {
 	let td = document.createElement("td");
 	td.textContent = dado;
 	td.classList.add(classe);
 	return td;
 }
 
-function validaAgendamento(agendamento){
+const validaAgendamento = (agendamento) => {
 	var erros = [];
 
 	if(agendamento.nome.length <= 2) erros.push ("O Nome do Motorista precisa ser válido");

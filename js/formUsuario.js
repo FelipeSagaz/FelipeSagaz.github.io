@@ -18,7 +18,7 @@ botaoEnviar.addEventListener("click", function(event){
 
 });
 
-function otbemDadosUsuario(form){
+const otbemDadosUsuario = (form) => {
 
 	let dados = {
 		nome: form.nome.value,
@@ -33,7 +33,7 @@ function otbemDadosUsuario(form){
 	return dados;
 }
 
-function validaDadosUsuario(dados){
+const validaDadosUsuario = (dados) => {
 	let erros = [];
 
 	if(dados.nome.length <= 2) erros.push ("O Nome precisa ser válido");
@@ -48,7 +48,7 @@ function validaDadosUsuario(dados){
 	return erros;
 }
 
-function exibeMensagensDeErroUsuario(erros){
+const exibeMensagensDeErroUsuario = (erros) =>{
 		let ul = document.querySelector("#mensagem-erro");
 		ul.innerHTML = "";
 		erros.forEach(function(erro){

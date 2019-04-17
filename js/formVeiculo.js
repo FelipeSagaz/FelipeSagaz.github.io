@@ -18,7 +18,7 @@ botaoEnviar.addEventListener("click", function(event){
 
 });
 
-function otbemDadosVeiculo(form){
+const otbemDadosVeiculo = (form) => {
 
 	let dados = {
 		placa: form.placa.value,
@@ -32,7 +32,7 @@ function otbemDadosVeiculo(form){
 	return dados;
 }
 
-function validaDadosVeiculo(dados){
+const validaDadosVeiculo = (dados) => {
 	let erros = [];
 
 	if(dados.placa.length != 7) erros.push ("A Placa do veículo precisa ser válido");
@@ -46,7 +46,7 @@ function validaDadosVeiculo(dados){
 	return erros;
 }
 
-function exibeMensagensDeErroVeiculo(erros){
+const exibeMensagensDeErroVeiculo = (erros) => {
 		let ul = document.querySelector("#mensagem-erro");
 		ul.innerHTML = "";
 		erros.forEach(function(erro){

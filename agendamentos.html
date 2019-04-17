@@ -52,22 +52,22 @@
 				<tr class="agendamento">
 					<td class="info-nome">Paulo</td>
 					<td class="info-veiculo">ABC1010</td>
-					<td class="info-entrada">10-10-2018</td>
-					<td class="info-saida">10-11-2018</td>
+					<td class="info-entrada">2018-10-11</td>
+					<td class="info-saida">2018-11-10</td>
 					<td class="info-operação">Carga</td>
 				</tr>
 				<tr class="agendamento">
 					<td class="info-nome">João</td>
 					<td class="info-veiculo">QIJ1012</td>
-					<td class="info-entrada">10-10-2017</td>
-					<td class="info-saida">10-11-2017</td>
+					<td class="info-entrada">2017-10-10</td>
+					<td class="info-saida">2017-10-11</td>
 					<td class="info-operação">Carga</td>
 				</tr>
 				<tr class="agendamento">
 					<td class="info-nome">Felipe</td>
 					<td class="info-veiculo">MLK0580</td>
-					<td class="info-entrada">10-10-2016</td>
-					<td class="info-saida">10-11-2016</td>
+					<td class="info-entrada">2016-10-10</td>
+					<td class="info-saida">2016-11-10</td>
 					<td class="info-operação">Descarga</td>
 				</tr>
 		</tbody>
@@ -95,16 +95,16 @@
 				<div class="col-1">
 					<label for="operação">Tipo de operação</label>
 					<div class="radio">
-						<input id="operação" type="radio" name="operação" required>
+						<input id="operação" type="radio" name="operação" value="Carga" required>
 						<label for="operação">Carga</label>
 					</div>
 					<div class="radio">
-						<input id="operação" type="radio" name="operação" required>
+						<input id="operação" type="radio" name="operação" value="Descarga" required>
 						<label for="operação">Descarga</label>
 					</div>
 				</div>
 			</div>
-  		<button id="enviar" type="submit">Cadastrar Agendamento</button>
+  		<button id="enviar" type="submit" onclick="topFunction()">Cadastrar Agendamento</button>
     </form>
   </section>
 	<footer>
