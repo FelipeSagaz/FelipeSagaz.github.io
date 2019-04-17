@@ -27,7 +27,7 @@ const otbemDadosVeiculo = (form) => {
     anoCompra: form.anoCompra.value,
     carga: form.carga.value,
     eixos: form.eixos.value,
-		cumprimento: form.cumprimento.value,
+		comprimento: form.comprimento.value,
 	}
 	return dados;
 }
@@ -35,13 +35,13 @@ const otbemDadosVeiculo = (form) => {
 const validaDadosVeiculo = (dados) => {
 	let erros = [];
 
-	if(dados.placa.length != 7) erros.push ("A Placa do veículo precisa ser válido");
-  if(dados.renavan.length != 11) erros.push ("O Renavan precisa ser válido");
+	if(dados.placa.length != 7) erros.push ("A Placa do veículo precisa ser válida e sem hífens");
+  if(dados.renavan.length != 11) erros.push ("O Renavan precisa ser válido e conter apenas números");
   if(dados.anoFabricação.length != 4) erros.push ("O ano de fabricação precisa ser válido");
   if(dados.anoCompra.length != 4) erros.push ("O ano de compra precisa ser válido");
   if(dados.carga.length == 0 || dados.carga > 400) erros.push ("A carga máxima precisa ser válida");
   if(dados.eixos.length == 0 || dados.eixos > 15) erros.push ("O número de eixos precisa ser válido");
-	if(dados.cumprimento.length == 0 || dados.cumprimento > 100) erros.push ("O cumprimento precisa ser válido");
+	if(dados.comprimento.length == 0 || dados.comprimento > 100) erros.push ("O comprimento precisa ser válido");
 
 	return erros;
 }

@@ -39,11 +39,11 @@ const validaDadosUsuario = (dados) => {
 	if(dados.nome.length <= 2) erros.push ("O Nome precisa ser válido");
 	if(dados.sobrenome.length <= 2) erros.push ("O Sobrenome precisa ser válido");
   if(dados.data.length == 0) erros.push ("A data precisa ser válida");
-	if(dados.cpf.length != 11) erros.push ("O CPF precisa ser válido");
-  if(dados.cnh.length != 11) erros.push ("A carteira de motorista precisa ser válida");
+	if(dados.cpf.length != 11) erros.push ("O CPF precisa ser válido e conter apenas números");
+  if(dados.cnh.length != 11) erros.push ("A carteira de motorista precisa ser válida e conter apenas números");
   if(dados.endereço.length == 0) erros.push ("O endereço não pode ficar em branco");
 	if(dados.email.indexOf("@") == -1 || dados.email.indexOf(".") == -1 || dados.email.length <= 6) erros.push ("O e-mail precisa ser válido");
-  if(dados.cel.length != 10) erros.push ("O número de celular precisa ser válido e ter o DDD");
+  if(dados.cel.length != 10) erros.push ("O número de celular precisa ser válido, ter o DDD e conter apenas números");
 
 	return erros;
 }

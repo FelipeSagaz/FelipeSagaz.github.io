@@ -72,10 +72,10 @@ const validaAgendamento = (agendamento) => {
 	var erros = [];
 
 	if(agendamento.nome.length <= 2) erros.push ("O Nome do Motorista precisa ser válido");
-	if(agendamento.veiculo.length != 7) erros.push ("A Placa do veículo precisa ser válido");
+	if(agendamento.veiculo.length != 7) erros.push ("A Placa do veículo precisa ser válida");
 	if(agendamento.dataEntrada.length == 0) erros.push ("A data de entrada precisa ser válida");
 	if(agendamento.dataSaida.length == 0) erros.push ("A data de saída precisa ser válida");
-  if(agendamento.operação.length == 0) erros.push ("A Operação não pode ficar em branco");
+  if(agendamento.operação.length == 0) erros.push ("O tipo de Operação não pode ficar em branco");
 
 	return erros;
 }
