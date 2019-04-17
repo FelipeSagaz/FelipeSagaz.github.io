@@ -13,3 +13,12 @@ table {
 table, th, td {
   border: 1px solid black;
 }
+
+.radio label{
+	padding: .2em .2em;
+  padding-left: .1em;
+  padding-right: .1em;
+}
+.radio input{
+	margin-left: 1em;
+}

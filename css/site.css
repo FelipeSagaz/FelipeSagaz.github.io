@@ -3,12 +3,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #353c4e;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .titulo-pagina h2{
   color: white;
-  font-size: 36px!important;
+  font-size: 180%;
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;

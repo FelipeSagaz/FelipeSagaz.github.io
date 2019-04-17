@@ -37,7 +37,7 @@ header {
 		background: #FFF;
 }
 .barra-nav {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 @media (min-width: 600px) {
     html {
@@ -58,7 +58,7 @@ header {
       margin: 0;
 
       height: 100%;
-      width: 90%;
+      width: 80%;
       max-width: 320px;
 
       position: fixed;
@@ -75,18 +75,6 @@ header {
       padding: 1em 0;
       width: 100%;
   }
-  .menu-ativo:after {
-        content: "";
-        display: block;
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-
-        background: #FFF;
-    }
 }
 
 @media not all and (max-width: 600px) {
@@ -101,15 +89,17 @@ header {
     border: 0;
     outline: 0;
     -webkit-appearance: none;
-    font-size: 1.6em;
+    font-size: 1.3em;
     text-indent: -999em;
 }
 .menu-abrir {
     height: 0;
     width:.75em;
-    padding-top:.125em;
+    padding-top:.1em;
+		padding-bottom: .05em;
     border-top: .375em double #000;
-    border-bottom: .125em solid #000;
+    border-bottom: .375em double #000;
+		border-color: #A0A0A0;
 
     vertical-align: middle;
     margin: 0.5em;

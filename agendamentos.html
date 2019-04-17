@@ -15,14 +15,13 @@
 <body>
 	<header>
 		<div class="container">
-
-			<button class="menu-abrir">Abre Menu</button>
-
       <h1 class="logo">
         <a href="index.html">
           <img src="http://gttlogistics.com.br/wp-content/uploads/2017/07/logo.png" alt="Logo Gtt Logistics">
         </a>
 			</h1>
+
+			<button class="menu-abrir">Abre Menu</button>
 
 			<nav class="barra-nav">
 
@@ -95,8 +94,14 @@
 				</div>
 				<div class="col-1">
 					<label for="operação">Tipo de operação</label>
-	        <input id="operação" type="radio" name="operação" required> Carga
-					<input id="operação" type="radio" name="operação" required> Descarga
+					<div class="radio">
+						<input id="operação" type="radio" name="operação" required>
+						<label for="operação">Carga</label>
+					</div>
+					<div class="radio">
+						<input id="operação" type="radio" name="operação" required>
+						<label for="operação">Descarga</label>
+					</div>
 				</div>
 			</div>
   		<button id="enviar" type="submit">Cadastrar Agendamento</button>
