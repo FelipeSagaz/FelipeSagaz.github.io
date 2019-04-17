@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Gtt Logistics | Cargo Manager</title>
+
+  <link rel="icon" href="http://gttlogistics.com.br/wp-content/uploads/2017/09/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/site.css">
+  <style media="screen">
+		.menu-principal .usuario{
+				color: red;
+		}
+  </style>
+</head>
+<body>
+	<header>
+		<div class="container">
+
+			<button class="menu-abrir">Abre Menu</button>
+
+			<h1 class="logo">
+        <a href="index.html">
+          <img src="http://gttlogistics.com.br/wp-content/uploads/2017/07/logo.png" alt="Logo Gtt Logistics">
+        </a>
+			</h1>
+
+			<nav class="barra-nav">
+
+				<button class="menu-fechar">Fecha Menu</button>
+
+				<ul class="menu-principal">
+					<li><a href="usuario.html" class="usuario">Cadastro de Usuário</a>
+					<li><a href="veiculo.html" class="veiculo">Cadastro de Veículo</a>
+					<li><a href="agendamentos.html" class="agendamento">Cadastro e Listagem de Agendamentos</a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+  <section class="titulo-pagina">
+    <h2>Cadastro de Usuário</h2>
+  </section>
+  <section class="form">
+    <ul id="mensagem-erro"></ul>
+    <form id="form-envia">
+			<div class="row">
+				<div class="col-1">
+					<label for="nome">Primeiro Nome</label>
+	        <input id="nome" placeholder="Primeiro nome" autofocus type="text" required="required" name="nome">
+				</div>
+				<div class="col-2">
+					<label for="sobrenome">Sobrenome</label>
+	        <input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome" required>
+				</div>
+				<div class="col-1">
+					<label for="data">Data de nascimento</label>
+	        <input id="data" type="date" name="data" required>
+				</div>
+				<div class="col-2">
+					<label for="cpf">CPF</label>
+	        <input id="cpf" type="number" name="cpf" placeholder="Apenas números" required>
+				</div>
+				<div class="col-1">
+					<label for="cnh">Carteira de Motorista (Número)</label>
+	        <input id="cnh" type="number" name="cnh" required>
+				</div>
+				<div class="col-2">
+					<label for="endereço">Endereço</label>
+	        <input id="endereço" type="text" name="endereço" required>
+				</div>
+				<div class="col-1">
+					<label for="email">E-mail</label>
+	        <input id="email" type="email" name="email" required placeholder="seu@email.com">
+				</div>
+				<div class="col-2">
+					<label for="cel">Celular (Com DDD)</label>
+					<input id="cel" type="number" name="cel" required>
+				</div>
+			</div>
+			<button id="enviar" type="submit">Cadastrar usuário</button>
+    </form>
+  </section>
+	<footer>
+		Copyright 2019 - Gtt Logistics
+	</footer>
+	<script src="js/menu.js"></script>
+  <script src="js/formUsuario.js"></script>
+</body>
+
+</html>

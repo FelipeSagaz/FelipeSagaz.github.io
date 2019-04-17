@@ -1,0 +1,15 @@
+.menu-principal .listagem{
+		color: red;
+}
+table {
+  border-collapse: collapse;
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	width: 70%;
+	color: #6F6F6F;
+}
+
+table, th, td {
+  border: 1px solid black;
+}

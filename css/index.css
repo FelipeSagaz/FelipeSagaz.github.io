@@ -1,0 +1,22 @@
+.main{
+  background-image: url(http://gttlogistics.com.br/wp-content/uploads/2017/07/fundo_titulo_pagina.jpg);
+  color: white;
+  font-family: "Courier New", monospace;
+  text-align: justify;
+  font-size: 110%;
+}
+.main .titulo-index{
+  text-align: left;
+  margin-left: 10%;
+  padding-top: 12%;
+  padding-bottom: 3%;
+  font-weight: bold;
+  font-size: 150%;
+  text-decoration: underline;
+}
+.main p{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 12%;
+  font-weight: bold;
+}

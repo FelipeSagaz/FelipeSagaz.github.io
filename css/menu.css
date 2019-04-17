@@ -1,0 +1,132 @@
+.menu-principal {
+	list-style-type: none;
+	font-family: monospace;
+	font-size: 1.25em;
+}
+.menu-principal a {
+		display: block;
+		padding-right: 1em;
+		margin-right: 1em;
+		line-height: 1;
+		text-decoration: none;
+		color: #A0A0A0;
+}
+.menu-principal a:hover {
+			color: red;
+			text-decoration: underline;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+img{
+  max-width: 100%;
+}
+
+.logo,
+.barra-nav,
+.menu-principal {
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-principal li {
+    float: left;
+}
+header {
+    padding: 0.5em 0;
+		background: #FFF;
+}
+.barra-nav {
+    margin-left: 10%;
+}
+@media (min-width: 600px) {
+    html {
+        font-size: 1.125em;
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 600px) {
+  .barra-nav {
+      background: #FFF;
+      padding: 1em;
+      margin: 0;
+
+      height: 100%;
+      width: 90%;
+      max-width: 320px;
+
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: -90%;
+
+      transition: left 0.3s ease-out;
+  }
+  .menu-ativo .barra-nav {
+      left: 0;
+  }
+  .menu-principal li {
+      padding: 1em 0;
+      width: 100%;
+  }
+  .menu-ativo:after {
+        content: "";
+        display: block;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background: #FFF;
+    }
+}
+
+@media not all and (max-width: 600px) {
+    .menu-abrir,
+    .menu-fechar {
+        display: none;
+    }
+}
+.menu-abrir,
+.menu-fechar {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em;
+}
+.menu-abrir {
+    height: 0;
+    width:.75em;
+    padding-top:.125em;
+    border-top: .375em double #000;
+    border-bottom: .125em solid #000;
+
+    vertical-align: middle;
+    margin: 0.5em;
+}
+
+.menu-fechar {
+    position: relative;
+    height: 1em;
+    width: 1em;
+}
+.menu-fechar:before {
+        content: '\00D7';
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-indent: 0;
+}
+.logo img {
+    width: 125px;
+}
