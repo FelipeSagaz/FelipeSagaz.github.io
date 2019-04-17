@@ -2,6 +2,7 @@
   Cargo Manager
   Não é necessário download ou mudança no sistema operacional.
   O desafio para o processo seletivo da Gtt Logistics consta apenas de HTML, CSS e JavaScript puro.
+  
   4 páginas HTML - index -> Página inicial;
                  - usuario -> Cadastro de Usuário (Motorista)
                  - veiculo -> Cadastro de veículos
